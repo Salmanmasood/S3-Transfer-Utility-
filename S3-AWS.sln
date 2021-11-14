@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3-AWS", "S3-AWS\S3-AWS.csproj", "{02BBD362-645A-4BE3-B0EF-D31E259D70CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3", "S3\S3.csproj", "{403CEC71-D33B-44FB-A9BA-50029D42CA5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02BBD362-645A-4BE3-B0EF-D31E259D70CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BBD362-645A-4BE3-B0EF-D31E259D70CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BBD362-645A-4BE3-B0EF-D31E259D70CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BBD362-645A-4BE3-B0EF-D31E259D70CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A774F03-9A96-4217-9DD2-4E2158498A77}
+	EndGlobalSection
+EndGlobal
