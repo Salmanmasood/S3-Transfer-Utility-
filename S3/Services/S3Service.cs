@@ -21,8 +21,8 @@ namespace S3.Services
             
             try
             {
-                var s3Credential = _configurationManager.ReadS3CredintialsFromEnvironmentVariable(); //read Access key ,secret key and Default Bucketname 
-                var credentials = new BasicAWSCredentials(s3Credential.SecretKey, s3Credential.SecretKey);
+                var s3Credential = _configurationManager.ReadS3CredintialsFromEnvironmentVariable(s3Document.BucketName); //read Access key ,secret key and Default Bucketname 
+                var credentials = new BasicAWSCredentials(s3Credential.AccessKey, s3Credential.SecretKey);
                 var config = new AmazonS3Config()
                 {
                     RegionEndpoint = Amazon.RegionEndpoint.APSouth1
@@ -32,13 +32,13 @@ namespace S3.Services
                 {
                     InputStream = s3Document.InputStream,
                     Key = s3Document.Key,
-                    BucketName = s3Document.BucketName,
+                    BucketName = s3Credential.BucketName,
                     CannedACL = S3CannedACL.PublicRead
                 };
                 var fileTransferUtility = new TransferUtility(client);
                 await fileTransferUtility.UploadAsync(uploadRequest);
                 s3DTO.StatusCode = "200";
-                s3DTO.Message = $"{s3Document.Key} Uploaded Successfully on {s3Document.BucketName}";
+                s3DTO.Message = $"{s3Document.Key} Uploaded Successfully on {s3Credential.BucketName}";
             }
             catch (AmazonS3Exception amazonS3Exception)
             {

@@ -6,6 +6,6 @@ namespace S3.Models
     {
         public MemoryStream InputStream { get; set; } = null!;
         public string Key { get; set; } = null!;
-        public string BucketName { get; set; } = null!;
+        public string BucketName { get; set; } 
     }
 }

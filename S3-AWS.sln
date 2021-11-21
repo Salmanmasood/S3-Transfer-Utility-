@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3-AWS", "S3-AWS\S3-AWS.csproj", "{02BBD362-645A-4BE3-B0EF-D31E259D70CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3-AWS", "S3-AWS\S3-AWS.csproj", "{02BBD362-645A-4BE3-B0EF-D31E259D70CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3", "S3\S3.csproj", "{403CEC71-D33B-44FB-A9BA-50029D42CA5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S3", "S3\S3.csproj", "{403CEC71-D33B-44FB-A9BA-50029D42CA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3.SqlServer", "S3.SqlServer\S3.SqlServer.csproj", "{DB8706D0-24B2-409B-9BA3-B765A6016249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{403CEC71-D33B-44FB-A9BA-50029D42CA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8706D0-24B2-409B-9BA3-B765A6016249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8706D0-24B2-409B-9BA3-B765A6016249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8706D0-24B2-409B-9BA3-B765A6016249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8706D0-24B2-409B-9BA3-B765A6016249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
